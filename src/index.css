@@ -1,6 +1,7 @@
+@import "tailwindcss";
 @font-face {
-  font-family: 'LeagueSpartan';
-  src: url('assets/font/League_Spartan/LeagueSpartan-VariableFont_wght.ttf');
+  font-family: "LeagueSpartan";
+  src: url("assets/font/League_Spartan/LeagueSpartan-VariableFont_wght.ttf");
 }
 :root {
   --primary: rgb(97, 0, 138);
@@ -8,7 +9,7 @@
   --light: rgb(239, 202, 255);
   --dark: rgb(27, 16, 32);
 }
-*{
+* {
   font-family: LeagueSpartan;
   margin: 0px;
   padding: 0px;
@@ -17,8 +18,14 @@
 a {
   text-decoration: none;
 }
-
-
-
-
-
+body {
+  background-color: black;
+}
+#root {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100dvw;
+  height: 100dvh;
+  background: black;
+}

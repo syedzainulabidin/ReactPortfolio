@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import LightRay from "./components/LightRay";
 
 const App = () => {
   return (
     <div>
-      Checking
+      <LightRay />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
