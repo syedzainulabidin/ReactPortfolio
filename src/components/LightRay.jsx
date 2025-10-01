@@ -3,7 +3,7 @@ import LightRays from "../raw/LightRay";
 
 const LightRay = () => {
   return (
-    <div style={{ width: "100dvw", height: "100dvh", position: "relative" }}>
+    // <div style={{ width: "100dvw", height: "100dvh", position: "a" }}>
       <LightRays
         raysOrigin="top-center"
         raysColor="#e5a9ff"
@@ -16,7 +16,7 @@ const LightRay = () => {
         distortion={0.05}
         className="custom-rays"
       />
-    </div>
+    // </div>
   );
 };
 
