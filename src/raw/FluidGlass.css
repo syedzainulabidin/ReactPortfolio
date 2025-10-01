@@ -1,5 +1,5 @@
 .nav {
-  width: 100%;
+  width: 90%;
   max-width: fit-content;
   display: flex;
   position: fixed;
@@ -9,7 +9,7 @@
   transform: translate(-50%, 0%);
   background: rgba(255, 255, 255, 0.137);
   border-radius: 7px;
-  height: 80px;
+  height: 60px;
   display: flex;
   align-items: center;
 

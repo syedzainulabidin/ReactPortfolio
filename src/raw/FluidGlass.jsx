@@ -1,20 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./FluidGlass.css";
 import { motion } from "motion/react";
 
-const FluidGlass = ({ navitems }) => {
-  let points = [6, 27, 48, 71];
-  const [indicatorLength, setindicatorLength] = useState(62);
-  const [indicatorPosition, setindicatorPosition] = useState(10);
+const FluidGlass = ({ navItems, navIcons, useIcons }) => {
+  const navContent = useIcons ? navIcons : navItems;
+  const firstNavRef = useRef(null);
+
+  const [indicatorLength, setIndicatorLength] = useState(0);
+  const [indicatorPosition, setIndicatorPosition] = useState(0);
+  useEffect(() => {
+    if (firstNavRef.current) {
+      setIndicatorLength(firstNavRef.current.clientWidth + 20);
+      setIndicatorPosition(firstNavRef.current.offsetLeft - 10);
+    }
+  }, [navContent, useIcons]);
+
   return (
     <div className="nav">
-      {navitems.map((item, index) => (
+      {navContent.map((item, index) => (
         <a
-          onMouseEnter={(e) => {
-            setindicatorLength(e.target.clientWidth + 20);
-            setindicatorPosition(e.target.offsetLeft - 10);
-          }}
           key={index}
+          ref={index === 0 ? firstNavRef : null}
+          onMouseEnter={(e) => {
+            setIndicatorLength(e.target.clientWidth + 20);
+            setIndicatorPosition(e.target.offsetLeft - 10);
+          }}
         >
           {item}
         </a>
@@ -29,7 +39,7 @@ const FluidGlass = ({ navitems }) => {
           type: "spring",
           stiffness: 500,
           damping: 20,
-          ease: "anticipate", // ✅ Easing function
+          ease: "anticipate",
         }}
       />
     </div>
