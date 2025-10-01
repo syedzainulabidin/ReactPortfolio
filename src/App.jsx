@@ -7,17 +7,17 @@ import ClickSpark from "./raw/ClickSpark";
 const App = () => {
   return (
     <div>
-      <ClickSpark
+      {/* <ClickSpark
         sparkColor="#fff"
         sparkSize={10}
         sparkRadius={15}
         sparkCount={8}
         duration={400}
-      >
+      > */}
         <LightRay />
         <FluidGlass />
-        <Hero heading={"Black Torpido"} />
-      </ClickSpark>
+        <Hero heading={"Qwerty Xyz"} />
+      {/* </ClickSpark> */}
     </div>
   );
 };
