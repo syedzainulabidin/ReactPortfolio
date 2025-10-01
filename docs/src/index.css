@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+*{
+  font-family: Poppins;
+}
+
+::selection{
+  color: green;
+  background: white;
+}
+textarea {
+  resize: none;
+}
+
+input::placeholder, textarea::placeholder{
+  color: rgba(128, 128, 128, 0.363);
+}

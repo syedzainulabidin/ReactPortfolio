@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Poppins;
+}
+
+*{
+  transition: all .3s;
+}

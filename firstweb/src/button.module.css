@@ -1,0 +1,14 @@
+.warning{
+    color: black;
+    background: yellow;
+}
+
+.error{
+    background: red;
+}
+
+.simple{
+    background: white;
+    margin: 0 10px;
+    padding: 3px;
+}

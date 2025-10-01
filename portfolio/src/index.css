@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@font-face {
+  font-family: 'LeagueSpartan';
+  src: url('assets/font/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
+}
+* {
+  font-family: 'LeagueSpartan', sans-serif;
+}
+
+
