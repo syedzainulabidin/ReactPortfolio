@@ -19,12 +19,14 @@
     text-transform: uppercase;
     color: white;
     font-weight: bold;
+    cursor: pointer;
   }
 }
 
 .nav-indicator {
   position: fixed;
   left: 10px;
+  width: 64px;
   height: 40px;
   background: var(--secondary);
   border-radius: 7px;

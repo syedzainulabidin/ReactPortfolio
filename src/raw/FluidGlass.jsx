@@ -10,7 +10,7 @@ const FluidGlass = ({ navItems, navIcons, useIcons }) => {
   const [indicatorPosition, setIndicatorPosition] = useState(0);
   useEffect(() => {
     if (firstNavRef.current) {
-      setIndicatorLength(firstNavRef.current.clientWidth + 20);
+      setIndicatorLength(firstNavRef.current.clientWidth + 13);
       setIndicatorPosition(firstNavRef.current.offsetLeft - 10);
     }
   }, [navContent, useIcons]);
@@ -38,7 +38,7 @@ const FluidGlass = ({ navItems, navIcons, useIcons }) => {
         transition={{
           type: "spring",
           stiffness: 500,
-          damping: 20,
+          damping: 30,
           ease: "anticipate",
         }}
       />

@@ -14,9 +14,9 @@ const App = () => {
         sparkCount={8}
         duration={400}
       > */}
-        <LightRay />
-        <FluidGlass />
-        <Hero heading={"Qwerty Xyz"} />
+      <LightRay />
+      <FluidGlass />
+      <Hero heading={"Zain ul Abidin"} />
       {/* </ClickSpark> */}
     </div>
   );
