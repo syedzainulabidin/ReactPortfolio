@@ -10,8 +10,10 @@ const FluidGlass = ({ navItems, navIcons, useIcons }) => {
   const [indicatorPosition, setIndicatorPosition] = useState(0);
   useEffect(() => {
     if (firstNavRef.current) {
-      setIndicatorLength(firstNavRef.current.clientWidth + 13);
-      setIndicatorPosition(firstNavRef.current.offsetLeft - 10);
+      setTimeout(() => {
+        setIndicatorLength(firstNavRef.current.clientWidth + 20);
+        setIndicatorPosition(firstNavRef.current.offsetLeft - 10);
+      }, 100);
     }
   }, [navContent, useIcons]);
 

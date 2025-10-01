@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import FluidGlasses from "../raw/FluidGlass";
+import { TiHome } from "react-icons/ti";
 
 const FluidGlass = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 350);
@@ -16,7 +17,7 @@ const FluidGlass = () => {
     <div>
       <FluidGlasses
         navItems={["home", "about", "portfolio", "contact"]}
-        navIcons={["H", "B", "P", "C"]}
+        navIcons={[<TiHome />, "B", "P", "C"]}
         useIcons={isSmallScreen}
       />
     </div>
