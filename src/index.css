@@ -6,7 +6,7 @@
 :root {
   --primary: rgb(97, 0, 138);
   --secondary: rgb(179, 0, 255);
-  --light: rgb(239, 202, 255);
+  --light: rgb(229, 169, 255);
   --dark: rgb(27, 16, 32);
 }
 * {
