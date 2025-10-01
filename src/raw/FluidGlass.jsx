@@ -24,8 +24,8 @@ const FluidGlass = ({ navItems, navIcons, useIcons }) => {
           key={index}
           ref={index === 0 ? firstNavRef : null}
           onMouseEnter={(e) => {
-            setIndicatorLength(e.target.clientWidth + 20);
-            setIndicatorPosition(e.target.offsetLeft - 10);
+            setIndicatorLength(e.target.closest("a").clientWidth + 20);
+            setIndicatorPosition(e.target.closest("a").offsetLeft - 10);
           }}
         >
           {item}
