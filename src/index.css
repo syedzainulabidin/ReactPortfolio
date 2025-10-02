@@ -4,9 +4,9 @@
   src: url("assets/font/League_Spartan/LeagueSpartan-VariableFont_wght.ttf");
 }
 :root {
-  --primary: rgb(60, 0, 138);
-  --secondary: rgb(140, 0, 255);
-  --light: rgb(209, 169, 255);
+  --primary: rgb(104, 0, 223);
+  --secondary: rgb(143, 46, 255);
+  --light: rgb(169, 104, 255);
   --dark: rgb(27, 16, 32);
 }
 .text-primary {
