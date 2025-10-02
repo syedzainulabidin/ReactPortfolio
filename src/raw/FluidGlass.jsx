@@ -18,7 +18,9 @@ const FluidGlass = ({ navItems, navIcons, useIcons }) => {
   }, [navContent, useIcons]);
 
   return (
-    <div className="nav">
+    <div
+      className="nav"
+    >
       {navContent.map((item, index) => (
         <a
           key={index}
