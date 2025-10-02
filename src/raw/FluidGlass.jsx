@@ -8,6 +8,7 @@ const FluidGlass = ({ navItems, navIcons, useIcons }) => {
 
   const [indicatorLength, setIndicatorLength] = useState(0);
   const [indicatorPosition, setIndicatorPosition] = useState(0);
+  const [indicatorFreeze, setindicatorFreeze] = useState(false);
   useEffect(() => {
     if (firstNavRef.current) {
       setTimeout(() => {
@@ -18,9 +19,7 @@ const FluidGlass = ({ navItems, navIcons, useIcons }) => {
   }, [navContent, useIcons]);
 
   return (
-    <div
-      className="nav"
-    >
+    <div className="nav">
       {navContent.map((item, index) => (
         <a
           key={index}
@@ -28,6 +27,10 @@ const FluidGlass = ({ navItems, navIcons, useIcons }) => {
           onMouseEnter={(e) => {
             setIndicatorLength(e.target.closest("a").clientWidth + 20);
             setIndicatorPosition(e.target.closest("a").offsetLeft - 10);
+            setindicatorFreeze(true);
+          }}
+          onMouseLeave={() => {
+            setindicatorFreeze(false);
           }}
         >
           {item}
@@ -38,6 +41,7 @@ const FluidGlass = ({ navItems, navIcons, useIcons }) => {
         animate={{
           width: `${indicatorLength}px`,
           left: `${indicatorPosition}px`,
+          background: `${indicatorFreeze ? "#ffffff20" : "#ffffff13"}`,
         }}
         transition={{
           type: "spring",
