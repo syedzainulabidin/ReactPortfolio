@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import FluidGlasses from "../raw/FluidGlass";
-import { TiHome } from "react-icons/ti";
-import { IoPerson } from "react-icons/io5";
+import { RiHome2Fill } from "react-icons/ri";
+
+import { MdPerson4 } from "react-icons/md";
+
 import { MdWork, MdContactPhone } from "react-icons/md";
 
 const FluidGlass = () => {
@@ -19,7 +21,12 @@ const FluidGlass = () => {
     <div>
       <FluidGlasses
         navItems={["home", "about", "portfolio", "contact"]}
-        navIcons={[<TiHome />, <IoPerson />, <MdWork />, <MdContactPhone />]}
+        navIcons={[
+          <RiHome2Fill />,
+          <MdPerson4 />,
+          <MdWork />,
+          <MdContactPhone />,
+        ]}
         useIcons={isSmallScreen}
       />
     </div>
