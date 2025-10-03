@@ -1,8 +1,9 @@
 .circular-text {
-  margin: 10px;
+  left: 10px;
+  top: 10px;
   border-radius: 50%;
   width: 100px;
-  position: relative;
+  position: fixed;
   height: 100px;
   font-weight: bold;
   color: #fff;
@@ -15,7 +16,7 @@
 
 @media (max-width: 576px) {
   .circular-text {
-    margin: 20px auto;
+    left: calc(50% - 50px);
   }
 }
 
