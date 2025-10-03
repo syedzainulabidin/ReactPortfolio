@@ -1,47 +1,64 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./FluidGlass.css";
 import { motion } from "motion/react";
+import { Link, useLocation } from "react-router-dom"; // ✅ import useLocation
 
 const FluidGlass = ({ navItems, navIcons, useIcons }) => {
   const navContent = useIcons ? navIcons : navItems;
-  const firstNavRef = useRef(null);
+  const navPaths = ["/", "/about", "/portfolio", "/contact"];
+  const location = useLocation(); // ✅ get current route
+
+  const navRefs = useRef([]); // store refs for all nav items
 
   const [indicatorLength, setIndicatorLength] = useState(0);
   const [indicatorPosition, setIndicatorPosition] = useState(0);
-  const [indicatorFreeze, setindicatorFreeze] = useState(false);
+  const [hovering, setHovering] = useState(false);
+
+  // ✅ Update indicator whenever route changes
   useEffect(() => {
-    if (firstNavRef.current) {
+    const activeIndex = navPaths.indexOf(location.pathname);
+    if (activeIndex !== -1 && navRefs.current[activeIndex]) {
+      const el = navRefs.current[activeIndex];
       setTimeout(() => {
-        setIndicatorLength(firstNavRef.current.clientWidth + 20);
-        setIndicatorPosition(firstNavRef.current.offsetLeft - 10);
+        setIndicatorLength(el.clientWidth - 20);
+        setIndicatorPosition(el.offsetLeft + 10);
       }, 200);
     }
-  }, [navContent, useIcons]);
+  }, [location.pathname, useIcons]);
 
   return (
     <div className="nav">
       {navContent.map((item, index) => (
-        <a
+        <Link
+          to={navPaths[index]}
           key={index}
-          ref={index === 0 ? firstNavRef : null}
+          ref={(el) => (navRefs.current[index] = el)}
           onMouseEnter={(e) => {
-            setIndicatorLength(e.target.closest("a").clientWidth + 20);
-            setIndicatorPosition(e.target.closest("a").offsetLeft - 10);
-            setindicatorFreeze(true);
+            setHovering(true);
+            setIndicatorLength(e.target.closest("a").clientWidth - 20);
+            setIndicatorPosition(e.target.closest("a").offsetLeft + 10);
           }}
           onMouseLeave={() => {
-            setindicatorFreeze(false);
+            setHovering(false);
+            // go back to active link when mouse leaves
+            const activeIndex = navPaths.indexOf(location.pathname);
+            if (activeIndex !== -1 && navRefs.current[activeIndex]) {
+              const el = navRefs.current[activeIndex];
+              setIndicatorLength(el.clientWidth - 20);
+              setIndicatorPosition(el.offsetLeft + 10);
+            }
           }}
         >
           {item}
-        </a>
+        </Link>
       ))}
+
       <motion.span
         className="nav-indicator"
         animate={{
           width: `${indicatorLength}px`,
           left: `${indicatorPosition}px`,
-          background: `${indicatorFreeze ? "#ffffff20" : "#ffffff13"}`,
+          background: hovering ? "#ffffff20" : "#ffffff13",
         }}
         transition={{
           type: "spring",
