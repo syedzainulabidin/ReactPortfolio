@@ -1,7 +1,12 @@
 import React from "react";
 import MagneticButton from "./MagneticButton";
-import { ImDownload } from "react-icons/im";
-import { MdOutlineArrowOutward } from "react-icons/md";
+import {
+  BsArrowUpRightCircleFill,
+  BsArrowDownCircleFill,
+} from "react-icons/bs";
+
+import { BsArrowDownSquareFill } from "react-icons/bs";
+import { FaDownload, FaGithub } from "react-icons/fa";
 
 const Hero = ({ heading }) => {
   return (
@@ -10,12 +15,12 @@ const Hero = ({ heading }) => {
       <div className="flex justify-center gap-3 mt-4">
         <MagneticButton
           text={"Resume"}
-          icon={<ImDownload />}
+          icon={<FaDownload size={20} />}
           path={"/download"}
         />
         <MagneticButton
           text={"Github"}
-          icon={<MdOutlineArrowOutward />}
+          icon={<FaGithub size={25} />}
           path={"https://github.com/syedzainulabidin"}
         />
       </div>
