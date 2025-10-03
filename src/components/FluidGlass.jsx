@@ -4,7 +4,7 @@ import { RiHome2Fill } from "react-icons/ri";
 
 import { MdPerson4 } from "react-icons/md";
 
-import { MdWork, MdContactPhone } from "react-icons/md";
+import { MdWork, MdContacts } from "react-icons/md";
 
 const FluidGlass = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 350);
@@ -25,7 +25,7 @@ const FluidGlass = () => {
           <RiHome2Fill />,
           <MdPerson4 />,
           <MdWork />,
-          <MdContactPhone />,
+          <MdContacts />,
         ]}
         useIcons={isSmallScreen}
       />
