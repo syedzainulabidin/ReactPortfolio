@@ -8,7 +8,7 @@ const LightRay = () => {
       raysColor="#a8a8ff"
       raysSpeed={1}
       lightSpread={2}
-      rayLength={3}
+      rayLength={1}
       followMouse={true}
       mouseInfluence={0.1}
       noiseAmount={0}

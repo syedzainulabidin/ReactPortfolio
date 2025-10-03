@@ -21,12 +21,7 @@ const FluidGlass = () => {
     <div>
       <FluidGlasses
         navItems={["home", "about", "portfolio", "contact"]}
-        navIcons={[
-          <RiHome2Fill />,
-          <MdPerson4 />,
-          <MdWork />,
-          <MdContacts />,
-        ]}
+        navIcons={[<RiHome2Fill />, <MdPerson4 />, <MdWork />, <MdContacts />]}
         useIcons={isSmallScreen}
       />
     </div>
