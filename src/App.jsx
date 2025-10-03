@@ -1,6 +1,6 @@
 import React from "react";
 import LightRay from "./components/LightRay";
-import FluidGlass from "./components/FluidGlass";
+import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import ClickSpark from "./raw/ClickSpark";
 
@@ -15,8 +15,9 @@ const App = () => {
         duration={400}
       > */}
       <LightRay />
-      <FluidGlass />
-      <Hero heading={"Zain ul Abidin"} />
+      {/* <FluidGlass /> */}
+      <Nav />
+      <Hero heading={"Black Bird"} />
       {/* </ClickSpark> */}
     </div>
   );

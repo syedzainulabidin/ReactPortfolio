@@ -14,7 +14,7 @@ const FluidGlass = ({ navItems, navIcons, useIcons }) => {
       setTimeout(() => {
         setIndicatorLength(firstNavRef.current.clientWidth + 20);
         setIndicatorPosition(firstNavRef.current.offsetLeft - 10);
-      }, 100);
+      }, 200);
     }
   }, [navContent, useIcons]);
 

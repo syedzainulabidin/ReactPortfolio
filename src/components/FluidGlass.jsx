@@ -11,7 +11,7 @@ const FluidGlass = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 460);
+      setIsSmallScreen(window.innerWidth < 576);
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
