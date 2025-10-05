@@ -30,6 +30,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 a {
   text-decoration: none;
@@ -39,10 +40,17 @@ body {
 }
 #root {
   /* position: ; */
-  overflow: hidden;
+  overflow-x: hidden;
   top: 0px;
   left: 0px;
   width: 100dvw;
   height: 100dvh;
   background: black;
+}
+
+.about {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }

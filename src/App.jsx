@@ -12,7 +12,7 @@ import Contact from "./pages/Contact";
 
 const App = () => {
   return (
-    <div>
+    <>
       {/* Always present */}
       <LightRay />
       <Nav />
@@ -24,7 +24,7 @@ const App = () => {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </div>
+    </>
   );
 };
 

@@ -1,12 +1,14 @@
 import React from "react";
+import BackgroundText from "../components/BackgroundText";
 
 const About = () => {
   return (
-    <div className="about text-white w-full absolute">
-      <h1 className="text-[20vw] font-black text-center overflow-x-hidden">
-        ABOUT US
-      </h1>
-    </div>
+    <>
+      <BackgroundText titleFirst="About" titleSecond="Me" />
+      <div className="text-white w-full h-screen flex items-center justify-center">
+        Lorem ipsum dolor, sit amet consectetur
+      </div>
+    </>
   );
 };
 
