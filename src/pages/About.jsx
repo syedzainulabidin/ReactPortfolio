@@ -9,8 +9,8 @@ const About = () => {
       <div className="text-blue-600 h-screen w-full pt-[100px] absolute overflow-x-hidden flex flex-col items-center">
         <BackgroundText titleFirst="About" titleSecond="Me" />
         <ProfileCard />
-        <Skills rtl={true} />
-        <Skills rtl={false} />
+        <Skills rtl={true} type="frontend" />
+        <Skills rtl={false} type="backend" />
       </div>
     </>
   );
