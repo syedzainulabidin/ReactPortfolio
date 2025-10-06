@@ -5,7 +5,26 @@ import "swiper/css";
 
 const SkillsSlider = ({ images = [], direction }) => {
   return (
-    <div className="skill-swiper w-screen">
+    <div
+      className="relative 
+    before:content-[''] 
+    before:absolute 
+    before:top-0 
+    before:left-0 
+    before:h-full 
+    before:w-[20%] 
+    before:z-[2] 
+    before:[background:linear-gradient(to_right,black,transparent)] 
+    after:content-[''] 
+    after:absolute 
+    after:top-0 
+    after:right-0 
+    after:h-full 
+    after:w-[20%] 
+    after:z-[3] 
+    after:[background:linear-gradient(to_left,black,transparent)] 
+    w-screen"
+    >
       <Swiper
         modules={[Autoplay]}
         spaceBetween={0}

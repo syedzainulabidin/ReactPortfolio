@@ -66,7 +66,7 @@ body {
   }
 }
 
-.skill-swiper {
+/* .skill-swiper {
   position: relative;
 
   &::after {
@@ -89,4 +89,4 @@ body {
     z-index: 2;
     background: linear-gradient(to left, rgb(0, 0, 0), rgba(255, 255, 255, 0));
   }
-}
+} */
