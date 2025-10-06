@@ -26,7 +26,6 @@ const SkillsSlider = ({ images = [], direction }) => {
         }}
       >
         {[...images, ...images].map((src, i) => (
-          // duplicate images array for smoother infinite loop
           <SwiperSlide key={i}>
             <div className="flex justify-center items-center py-12">
               <img
