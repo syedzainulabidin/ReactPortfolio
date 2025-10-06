@@ -5,7 +5,7 @@ import "swiper/css";
 
 const SkillsSlider = ({ images = [], direction }) => {
   return (
-    <div className="w-screen">
+    <div className="skill-swiper w-screen">
       <Swiper
         modules={[Autoplay]}
         spaceBetween={0}
@@ -27,7 +27,7 @@ const SkillsSlider = ({ images = [], direction }) => {
       >
         {[...images, ...images].map((src, i) => (
           <SwiperSlide key={i}>
-            <div className="flex justify-center items-center py-12">
+            <div className="flex justify-center items-center py-12 ">
               <img
                 src={src}
                 alt={`Skill ${i}`}

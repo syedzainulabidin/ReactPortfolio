@@ -4,7 +4,7 @@ import SkillsSlider from "../raw/Skills";
 const Skills = ({ rtl, type }) => {
   const frontend = [
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
@@ -33,8 +33,6 @@ const Skills = ({ rtl, type }) => {
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/composer/composer-original.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
   ];
-
-  console.log(type);
   return (
     <SkillsSlider
       images={type == "frontend" ? frontend : backend}
