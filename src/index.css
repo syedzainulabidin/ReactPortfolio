@@ -1,4 +1,11 @@
 @import "tailwindcss";
+* {
+  font-family: LeagueSpartan;
+  /* margin: 0px;
+  padding: 0px; */
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
 @font-face {
   font-family: "LeagueSpartan";
   src: url("assets/font/League_Spartan/LeagueSpartan-VariableFont_wght.ttf");
@@ -25,13 +32,6 @@
   color: var(--dark);
 }
 
-* {
-  font-family: LeagueSpartan;
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  /* overflow-x: hidden; */
-}
 a {
   text-decoration: none;
 }

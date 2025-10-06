@@ -61,7 +61,9 @@
 }
 
 .pc-card {
+  opacity: 0.6; /** Added */
   height: 80svh;
+  overflow: hidden;
   max-height: 540px;
   display: grid;
   aspect-ratio: 0.718;
