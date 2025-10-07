@@ -6,7 +6,9 @@ import "swiper/css";
 const SkillsSlider = ({ images = [], direction }) => {
   return (
     <div
-      className="relative 
+      className="
+    w-screen
+    relative
     before:content-[''] 
     before:absolute 
     before:top-0 
@@ -14,7 +16,7 @@ const SkillsSlider = ({ images = [], direction }) => {
     before:h-full 
     before:w-[20%] 
     before:z-[2] 
-    before:[background:linear-gradient(to_right,black,transparent)] 
+    before:[background:linear-gradient(to_right,transparent,transparent)] //todo Fade
     after:content-[''] 
     after:absolute 
     after:top-0 
@@ -22,8 +24,8 @@ const SkillsSlider = ({ images = [], direction }) => {
     after:h-full 
     after:w-[20%] 
     after:z-[3] 
-    after:[background:linear-gradient(to_left,black,transparent)] 
-    w-screen"
+    after:[background:linear-gradient(to_left,transparent,transparent)] //todo Fade
+    "
     >
       <Swiper
         modules={[Autoplay]}
@@ -46,7 +48,7 @@ const SkillsSlider = ({ images = [], direction }) => {
       >
         {[...images, ...images].map((src, i) => (
           <SwiperSlide key={i}>
-            <div className="flex justify-center items-center py-12 ">
+            <div className="flex justify-center items-center py-5 overflow-visible">
               <img
                 src={src}
                 alt={`Skill ${i}`}
@@ -55,7 +57,7 @@ const SkillsSlider = ({ images = [], direction }) => {
               <img
                 src={src}
                 alt={`Skill ${i}`}
-                className="w-18 h-18 object-contain absolute z-40 opacity-50 transition-all duration-300 blur-xl"
+                className="w-20 h-20 object-contain absolute -z-20 opacity-90 transition-all duration-300 blur-xl"
               />
             </div>
           </SwiperSlide>

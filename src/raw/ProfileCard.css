@@ -33,7 +33,7 @@
   transform: translate3d(0, 0, 0.1px);
   position: relative;
   touch-action: none;
-  margin-top: -20vw; /** Added */
+  margin-top: -10vw; /** Added */
 }
 
 .pc-card-wrapper::before {
@@ -47,7 +47,8 @@
   filter: contrast(2) saturate(2) blur(36px);
   transform: scale(0.8) translate3d(0, 0, 0.1px);
   background-size: 100% 100%;
-  background-image: var(--behind-gradient);
+  /* opacity: 0.5; */
+  background: linear-gradient(to bottom, var(--behind-gradient), red);
 }
 
 .pc-card-wrapper:hover,
@@ -62,7 +63,7 @@
 }
 
 .pc-card {
-  opacity: 0.6; /** Added */
+  opacity: 0.9;
   height: 80svh;
   overflow: hidden;
   max-height: 540px;
@@ -254,7 +255,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%) scale(1);
-  bottom: 2px;
+  bottom: 0px;
   opacity: calc(1.75 - var(--pointer-from-center));
 }
 
@@ -263,7 +264,7 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  backdrop-filter: blur(30px);
+  /* backdrop-filter: blur(2px); */
   mask: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 0%,

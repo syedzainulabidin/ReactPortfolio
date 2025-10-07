@@ -1,11 +1,5 @@
 import React from "react";
 import MagneticButton from "./MagneticButton";
-import {
-  BsArrowUpRightCircleFill,
-  BsArrowDownCircleFill,
-} from "react-icons/bs";
-
-import { BsArrowDownSquareFill } from "react-icons/bs";
 import { FaDownload, FaGithub } from "react-icons/fa";
 
 const Hero = ({ heading }) => {

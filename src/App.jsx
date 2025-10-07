@@ -14,12 +14,14 @@ const App = () => {
   return (
     <>
       {/* Always present */}
-      <LightRay />
+      {/* <div className="bg-blue-900 w-screen h-screen"> */}
+        <LightRay />
+      {/* </div> */}
       <Nav />
 
       {/* Page-specific content */}
       <Routes>
-        <Route path="/" element={<Hero heading="Black Bird" />} />
+        <Route path="/" element={<Hero heading="Zain ul Abidin" />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />

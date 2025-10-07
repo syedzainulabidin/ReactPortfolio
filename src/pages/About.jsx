@@ -6,8 +6,8 @@ import Skills from "../components/Skills";
 const About = () => {
   return (
     <>
-      <div className="about-container w-full absolute overflow-x-hidden flex flex-col items-center">
-        <BackgroundText titleFirst="About" titleSecond="Me" />
+      <div className="about-container w-full h-screen overflow-y-scroll overflow-x-hidden flex flex-col items-center pt-[100px]">
+        <BackgroundText titleFirst="About me" titleSecond={null} />
         <ProfileCard />
         <Skills rtl={true} type="frontend" />
         <Skills rtl={false} type="backend" />

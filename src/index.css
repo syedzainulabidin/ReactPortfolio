@@ -47,21 +47,19 @@ body {
   background: black;
 }
 
-/* .about {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  overflow: hidden;
-} */
-
 .about-container {
-  overflow-x: hidden;
-  overflow-y: scroll;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+  scroll-behavior: smooth !important;
 
   &::-webkit-scrollbar {
-    display: none;
+    display: none !important;
   }
+}
+
+.swiper,
+.swiper-wrapper {
+  overflow: visible !important;
 }

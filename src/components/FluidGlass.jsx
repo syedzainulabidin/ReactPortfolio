@@ -7,13 +7,20 @@ import { MdPerson4 } from "react-icons/md";
 import { MdWork, MdContacts } from "react-icons/md";
 
 const FluidGlass = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 350);
+  const [isSmallScreen, setIsSmallScreen] = useState(
+    () => window.innerWidth < 576
+  ); // <-- Fix initial check
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 576);
+      setIsSmallScreen(window.innerWidth < 576); // consistent check
     };
+
     window.addEventListener("resize", handleResize);
+
+    // Trigger once on mount to correct value in case SSR/hydration mismatch
+    handleResize();
+
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 

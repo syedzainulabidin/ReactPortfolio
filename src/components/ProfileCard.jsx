@@ -4,12 +4,13 @@ import ProfileCards from "../raw/ProfileCard";
 const ProfileCard = () => {
   return (
     <ProfileCards
-      name="Black Bird"
+      name="Zain ul Abidin"
       title="Developer"
-      handle="blackbird"
+      handle="syedzainulabidinali"
       status="Online"
       contactText="Contact Me"
-      avatarUrl="src\assets\images\profile.jpeg"
+      avatarUrl="src\assets\images\profile2.png"
+      iconUrl="src/assets/images/iconpattern.png"
       showUserInfo={true}
       enableTilt={true}
       enableMobileTilt={false}
