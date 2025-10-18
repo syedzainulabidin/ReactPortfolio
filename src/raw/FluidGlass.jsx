@@ -27,7 +27,7 @@ const FluidGlass = ({ navItems, navIcons, useIcons }) => {
   }, [location.pathname, useIcons]);
 
   return (
-    <div className="nav">
+    <div className="nav bg-[rgba(255,255,255,0.001)] shadow-[inset_2px_2px_4px_0px_rgba(255,255,255,0.308),0px_0px_5px_5px_rgba(0,0,0,0.308)] rounded-[7px] backdrop-blur-[30px]">
       {navContent.map((item, index) => (
         <Link
           to={navPaths[index]}
