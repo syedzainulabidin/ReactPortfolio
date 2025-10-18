@@ -13,7 +13,7 @@ const MagneticButton = ({ text, icon, path, bg = "transparent" }) => {
           }}
           className="magnetic-button h-12 text-white font-bold flex items-center justify-evenly p-4"
         >
-          {text} {icon}
+          {text} <span className="ms-3">{icon}</span>
         </button>
       </a>
     </MagneticButtons>
