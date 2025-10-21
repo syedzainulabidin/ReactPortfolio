@@ -57,7 +57,7 @@ const About = () => {
           <Experience
             img="https://images.seeklogo.com/logo-png/17/3/government-of-sindh-pakistan-logo-png_seeklogo-174181.png"
             title="Sindh Govt Hospital K5"
-            about="Volunteered to develop a card automation system for the hospital, using PHP and Bootstrap to streamline patient data and improve workflow efficiency."
+            about="Volunteered to develop a card automation system for the hospital, using PHP and Bootstrap to streamline Doctors and other Paramedical staff data and improve workflow efficiency."
             roles={["Volunteer", "Card Automation", "Php Developer"]}
             icons={[<MdOutlineVolunteerActivism />, <FaBootstrap />, <FaPhp />]}
             start="2021"

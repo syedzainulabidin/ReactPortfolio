@@ -47,7 +47,8 @@ body {
   background: black;
 }
 
-.about-container {
+.about-container,
+.portfolio-container {
   overflow-x: hidden !important;
   overflow-y: scroll !important;
   scrollbar-width: none !important;
