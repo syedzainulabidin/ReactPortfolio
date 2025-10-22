@@ -17,6 +17,11 @@ const Skills = ({ rtl, type }) => {
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xml/xml-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swiper/swiper-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg"
   ];
 
   const backend = [
@@ -32,6 +37,11 @@ const Skills = ({ rtl, type }) => {
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/composer/composer-original.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kalilinux/kalilinux-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg"
   ];
   return (
     <SkillsSlider
