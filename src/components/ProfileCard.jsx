@@ -9,7 +9,7 @@ const ProfileCard = () => {
       handle="syedzainulabidinali"
       status="Online"
       contactText="Contact Me"
-      avatarUrl="src\assets\images\profile2.png"
+      avatarUrl="src\assets\images\animatedprofile.png"
       iconUrl="src/assets/images/iconpattern.png"
       showUserInfo={true}
       enableTilt={true}
