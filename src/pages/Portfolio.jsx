@@ -12,31 +12,37 @@ const Portfolio = () => {
             title="Quick Snacks"
             img="https://marvel-b1-cdn.bc0a.com/f00000000100045/www.elmhurst.edu/wp-content/uploads/2018/12/5-skills-project-management-degree-elmhurst-college-infographic-thumb.jpg"
             link="https://quick--snacks.web.app"
+            gLink="https://github.com/syedzainulabidin/"
           />
           <Project
             title="UxPendit"
             img="https://marvel-b1-cdn.bc0a.com/f00000000100045/www.elmhurst.edu/wp-content/uploads/2018/12/5-skills-project-management-degree-elmhurst-college-infographic-thumb.jpg"
             link="https://szainportfolio.web.app/projects/uxpendit/"
+            gLink="https://github.com/syedzainulabidin/"
           />
           <Project
             title="Mowe"
             img="https://marvel-b1-cdn.bc0a.com/f00000000100045/www.elmhurst.edu/wp-content/uploads/2018/12/5-skills-project-management-degree-elmhurst-college-infographic-thumb.jpg"
             link="https://szainportfolio.web.app/projects/movie/"
+            gLink="https://github.com/syedzainulabidin/"
           />
           <Project
             title="Quick Snacks"
             img="https://marvel-b1-cdn.bc0a.com/f00000000100045/www.elmhurst.edu/wp-content/uploads/2018/12/5-skills-project-management-degree-elmhurst-college-infographic-thumb.jpg"
             link="https://quick--snacks.web.app"
+            gLink="https://github.com/syedzainulabidin/"
           />
           <Project
             title="UxPendit"
             img="https://marvel-b1-cdn.bc0a.com/f00000000100045/www.elmhurst.edu/wp-content/uploads/2018/12/5-skills-project-management-degree-elmhurst-college-infographic-thumb.jpg"
             link="https://szainportfolio.web.app/projects/uxpendit/"
+            gLink="https://github.com/syedzainulabidin/"
           />
           <Project
             title="Mowe"
             img="https://marvel-b1-cdn.bc0a.com/f00000000100045/www.elmhurst.edu/wp-content/uploads/2018/12/5-skills-project-management-degree-elmhurst-college-infographic-thumb.jpg"
             link="https://szainportfolio.web.app/projects/movie/"
+            gLink="https://github.com/syedzainulabidin/"
           />
         </div>
       </div>

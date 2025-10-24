@@ -1,7 +1,7 @@
 import React from "react";
 import TiltedCard from "../raw/TiltedCard";
 
-const Project = ({ title, img, link }) => {
+const Project = ({ title, img, link, gLink }) => {
   return (
     <TiltedCard
       imageSrc={img}
@@ -17,11 +17,22 @@ const Project = ({ title, img, link }) => {
       showTooltip={true}
       displayOverlayContent={true}
       overlayContent={
-        <p class="m-2 p-2 bg-black text-white rounded-[12px]">
-          <a href={link} target="_blank">
+        <span class="flex items-end justify-end w-[250px] h-[250px] p-2 text-white rounded-[12px]">
+          <a
+            href={link}
+            target="_blank"
+            className="bg-black p-2 m-1 rounded-xl"
+          >
             Visit {title}
           </a>
-        </p>
+          <a
+            href={gLink}
+            target="_blank"
+            className="bg-black p-2 m-1 rounded-xl"
+          >
+            Github
+          </a>
+        </span>
       }
     />
   );
