@@ -17,7 +17,7 @@ const Project = ({ title, img, link, gLink }) => {
       showTooltip={true}
       displayOverlayContent={true}
       overlayContent={
-        <span class="flex items-end justify-end w-[250px] h-[250px] p-2 text-white rounded-[12px]">
+        <span className="flex items-end justify-end w-[250px] h-[250px] p-2 text-white rounded-[12px]">
           <a
             href={link}
             target="_blank"
