@@ -22,7 +22,7 @@ const About = () => {
         <Skills rtl={true} type="frontend" />
         <Skills rtl={false} type="backend" />
         <BackgroundText titleFirst="Experience" titleSecond={null} />
-        <div className="w-[calc(100%-40px)] flex justify-between gap-4 flex-wrap max-[900px]:flex-col">
+        <div className="w-[calc(100%-80px)] flex justify-between gap-4 flex-wrap max-[900px]:flex-col">
           <Experience
             img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV9vyoJ-MhCaT7GsDmlwki8kE-7ZuW91nddw&s"
             title="Logic Unit"
